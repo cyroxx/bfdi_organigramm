@@ -1,8 +1,8 @@
 import json
 import graphviz
 
-GRAPH_ATTR = dict(ranksep='0.5', splines="ortho")
-NODE_ATTR = dict(shape='box', width='2.3', height='0.6', fontname="Arial")
+GRAPH_ATTR = dict(ranksep='0.3', splines="ortho", mode="hier")
+NODE_ATTR = dict(shape='box', width='4.3', height='0.6', fontname="Arial")
 NODE_INTERMEDIATE_ATTR = dict(shape='none', width='0', height='0', label="")
 EDGE_ATTR = dict(dir='none')
 
@@ -21,35 +21,36 @@ def get_children(node):
 
 def walk_children(node, node_function=None, level=0, graph=None):
 
-    if not node.get('children'):
+    if not node.get('children') or not node['children']['edges']:
         return None
 
-    i = 0
-    prev_intermediate = None
-    for edge in node['children']['edges']:
-        child_node = edge['node']
-
-        if node_function:
-            node_function(child_node)
-
-        if level < 3:
-            graph.edge(node['id'], child_node['id'])
-        else:
-            intermediate = f"{node['id'][-5:]}_{child_node['id'][-5:]}_intermediate"
-            graph.node(intermediate, **NODE_INTERMEDIATE_ATTR)
-
-            if prev_intermediate:
-                graph.edge(prev_intermediate, intermediate)
+    subgraph_name = f"subgraph_{node['id']}"  # f"{'subgraph' if level < 3 else 'cluster'}_{node['id']}"
+    with graph.subgraph(name=subgraph_name) as g:
+        prev_intermediate = None
+        for i, edge in enumerate(node['children']['edges']):
+            print(i)
+            child_node = edge['node']
+    
+            if node_function:
+                node_function(child_node)
+    
+            if level < 3:
+                g.edge(node['id'], child_node['id'])
             else:
-                graph.edge(node['id'], intermediate)
-
-            with graph.subgraph(graph_attr={'rank': 'same'}) as c:
-                c.edge(intermediate, child_node['id'])
-
-            prev_intermediate = intermediate
-
-        walk_children(child_node, node_function, level=level+1, graph=graph)
-        i+=1
+                intermediate = f"{node['id'][-5:]}_{child_node['id'][-5:]}_intermediate"
+                g.node(intermediate, **NODE_INTERMEDIATE_ATTR)
+    
+                if prev_intermediate:
+                    g.edge(prev_intermediate, intermediate)
+                else:
+                    g.edge(node['id'], intermediate)
+    
+                with g.subgraph(graph_attr=dict(rank='same')) as c:
+                    c.edge(intermediate, child_node['id'])
+    
+                prev_intermediate = intermediate
+    
+            walk_children(child_node, node_function, level=level+1, graph=g)
 
 
 def main():
@@ -60,7 +61,7 @@ def main():
 
     dot = graphviz.Digraph('BfDI',
                            comment='Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (BfDI)',
-                           )
+                           engine='dot')
     dot.graph_attr.update(GRAPH_ATTR)
     dot.node_attr.update(NODE_ATTR)
     dot.edge_attr.update(EDGE_ATTR)
