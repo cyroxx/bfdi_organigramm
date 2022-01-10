@@ -19,7 +19,7 @@ def get_children(node):
         yield edge['node']
 
 
-def walk_children(node, node_function=None, edge_function=None, level=0, graph=None):
+def walk_children(node, node_function=None, level=0, graph=None):
 
     if not node.get('children'):
         return None
@@ -48,7 +48,7 @@ def walk_children(node, node_function=None, edge_function=None, level=0, graph=N
 
             prev_intermediate = intermediate
 
-        walk_children(child_node, node_function, edge_function, level=level+1, graph=graph)
+        walk_children(child_node, node_function, level=level+1, graph=graph)
         i+=1
 
 
@@ -90,19 +90,7 @@ def main():
 
         dot.node(node['id'], node_text)
 
-    def parent_child_function(parent, child, level=0):
-        if level < 3:
-            dot.edge(parent['id'], child['id'])
-        else:
-            intermediate = f"{parent['id'][-5:]}_{child['id'][-5:]}_intermediate"
-            dot.node(intermediate, **NODE_INTERMEDIATE_ATTR)
-
-            dot.edge(parent['id'], intermediate)
-
-            with dot.subgraph(graph_attr={'rank': 'same'}) as c:
-                c.edge(intermediate, child['id'])
-
-    walk_children(root, custom_node_function, parent_child_function, graph=dot)
+    walk_children(root, custom_node_function, graph=dot)
 
     print(dot.source)
 
