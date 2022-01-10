@@ -1,6 +1,11 @@
 import json
 import graphviz
 
+GRAPH_ATTR = dict(ranksep='0.5', splines="ortho")
+NODE_ATTR = dict(shape='box', width='2.3', height='0.6', fontname="Arial")
+NODE_INTERMEDIATE_ATTR = dict(shape='none', width='0', height='0', label="")
+EDGE_ATTR = dict(dir='none')
+
 def print_node(node):
     node_id = node.get('id')
     node_name = node.get('name')
@@ -14,7 +19,7 @@ def get_children(node):
         yield edge['node']
 
 
-def walk_children(node, node_function=None, edge_function=None):
+def walk_children(node, node_function=None, edge_function=None, level=0):
 
     if not node.get('children'):
         return None
@@ -26,9 +31,9 @@ def walk_children(node, node_function=None, edge_function=None):
             node_function(child_node)
 
         if edge_function:
-            edge_function(node, child_node)
+            edge_function(node, child_node, level)
 
-        walk_children(child_node, node_function, edge_function)
+        walk_children(child_node, node_function, edge_function, level=level+1)
 
 
 def main():
@@ -40,8 +45,9 @@ def main():
     dot = graphviz.Digraph('BfDI',
                            comment='Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (BfDI)',
                            )
-    dot.graph_attr.update(ranksep='0.5', splines="ortho")
-    dot.node_attr.update(shape='box', width='2.3', height='0.6', fontname="Arial")
+    dot.graph_attr.update(GRAPH_ATTR)
+    dot.node_attr.update(NODE_ATTR)
+    dot.edge_attr.update(EDGE_ATTR)
 
     print_node(root)
 
@@ -67,8 +73,17 @@ def main():
 
         dot.node(node['id'], node_text)
 
-    def parent_child_function(parent, child):
-        dot.edge(parent['id'], child['id'])
+    def parent_child_function(parent, child, level=0):
+        if level < 3:
+            dot.edge(parent['id'], child['id'])
+        else:
+            intermediate = f"{parent['id'][-5:]}_{child['id'][-5:]}_intermediate"
+            dot.node(intermediate, **NODE_INTERMEDIATE_ATTR)
+
+            dot.edge(parent['id'], intermediate)
+
+            with dot.subgraph(graph_attr={'rank': 'same'}) as c:
+                c.edge(intermediate, child['id'])
 
     walk_children(root, custom_node_function, parent_child_function)
 
