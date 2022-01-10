@@ -1,6 +1,8 @@
 import json
 import graphviz
 
+OUTPUT_FORMAT = 'png'  # or: 'pdf', 'svg'
+
 GRAPH_ATTR = dict(ranksep='0.3', splines="ortho", mode="hier")
 NODE_ATTR = dict(shape='box', width='4.3', height='0.6', fontname="Arial")
 NODE_INTERMEDIATE_ATTR = dict(shape='none', width='0', height='0', label="")
@@ -107,7 +109,7 @@ def main():
 
     print(dot.source)
 
-    dot.format = 'png'
+    dot.format = OUTPUT_FORMAT
     dot.render(directory='output').replace('\\', '/')
 
 
