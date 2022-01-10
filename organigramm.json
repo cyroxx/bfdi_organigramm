@@ -1,0 +1,1100 @@
+{
+  "data": {
+    "organisationEntity": {
+      "shortName": "BfDI",
+      "name": "Bundesbeauftragter für den Datenschutz und die Informationsfreiheit",
+      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToxMTMx",
+      "locations": {
+        "edges": [
+          {
+            "node": {
+              "name": "Hauptadresse",
+              "street": "Graurheindorfer Straße 153",
+              "postalCode": "53117",
+              "city": "Bonn"
+            }
+          }
+        ]
+      },
+      "reverseClaims": {
+        "edges": []
+      },
+      "claims": {
+        "edges": [
+          {
+            "node": {
+              "value": "{\"url\": \"https://de.wikipedia.org/wiki/Bundesbeauftragter_f%C3%BCr_den_Datenschutz_und_die_Informationsfreiheit\"}",
+              "claimType": {
+                "name": "Wikipedia Link"
+              }
+            }
+          },
+          {
+            "node": {
+              "value": "{\"name\": \"Oberste Bundesbeh\\u00f6rde\"}",
+              "claimType": {
+                "name": "Organisationsebene"
+              }
+            }
+          },
+          {
+            "node": {
+              "value": "{\"name\": \"Beauftragte\"}",
+              "claimType": {
+                "name": "Organisationsebene"
+              }
+            }
+          },
+          {
+            "node": {
+              "value": "{\"id\": \"Q1005821\"}",
+              "claimType": {
+                "name": "Wikidata"
+              }
+            }
+          }
+        ]
+      },
+      "parent": null,
+      "children": {
+        "edges": [
+          {
+            "node": {
+              "shortName": null,
+              "name": "Vertrauensperson der schwerbehinderten Menschen",
+              "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjU1",
+              "locations": {
+                "edges": []
+              },
+              "reverseClaims": {
+                "edges": [
+                  {
+                    "node": {
+                      "claimType": {
+                        "name": "headOf"
+                      },
+                      "entity": {
+                        "name": "Thelen",
+                        "position": "OAR´n"
+                      }
+                    }
+                  }
+                ]
+              },
+              "claims": {
+                "edges": []
+              },
+              "children": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "shortName": null,
+              "name": "Personalrat Vorsitzender",
+              "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjU3",
+              "locations": {
+                "edges": []
+              },
+              "reverseClaims": {
+                "edges": [
+                  {
+                    "node": {
+                      "claimType": {
+                        "name": "headOf"
+                      },
+                      "entity": {
+                        "name": "Walbröl",
+                        "position": "TB"
+                      }
+                    }
+                  }
+                ]
+              },
+              "claims": {
+                "edges": []
+              },
+              "children": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "shortName": null,
+              "name": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit",
+              "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjU5",
+              "locations": {
+                "edges": []
+              },
+              "reverseClaims": {
+                "edges": [
+                  {
+                    "node": {
+                      "claimType": {
+                        "name": "headOf"
+                      },
+                      "entity": {
+                        "name": "Ulrich Kelber",
+                        "position": "Prof."
+                      }
+                    }
+                  }
+                ]
+              },
+              "claims": {
+                "edges": []
+              },
+              "children": {
+                "edges": [
+                  {
+                    "node": {
+                      "shortName": null,
+                      "name": "Leitender Beamter",
+                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjYx",
+                      "locations": {
+                        "edges": []
+                      },
+                      "reverseClaims": {
+                        "edges": [
+                          {
+                            "node": {
+                              "claimType": {
+                                "name": "headOf"
+                              },
+                              "entity": {
+                                "name": "Müller, J. H.",
+                                "position": "MinDir"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "claims": {
+                        "edges": []
+                      },
+                      "children": {
+                        "edges": [
+                          {
+                            "node": {
+                              "shortName": "Abteilung 3",
+                              "name": "Polizei und Nachrichtendienste",
+                              "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjYz",
+                              "locations": {
+                                "edges": []
+                              },
+                              "reverseClaims": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "claimType": {
+                                        "name": "headOf"
+                                      },
+                                      "entity": {
+                                        "name": "Polfers",
+                                        "position": "EDir‘n"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "claims": {
+                                "edges": []
+                              },
+                              "children": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 36",
+                                      "name": "Sicherheitsüberprüfungsgesetz",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjY1",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Dr. Gnedler",
+                                                "position": "RD´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 35",
+                                      "name": "Bundespolizei, Zollkriminalamt, Financial Intelligence Unit",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjcz",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Löwnau",
+                                                "position": "MR´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 34",
+                                      "name": "Bundesnachrichtendienst, Militärisches Nachrichtenwesen, Nachrichtendienstliche Kooperationen",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjc5",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Mittnacht",
+                                                "position": "MR´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 33",
+                                      "name": "Bundesamt für Verfassungsschutz, Bundesamt für den Militärischen Abschirmdienst",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjg3",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Dr. Sosna",
+                                                "position": "MR´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 32",
+                                      "name": "Bundeskriminalamt, Generalbundesanwalt",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjk1",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Bergemann",
+                                                "position": "RD"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 31",
+                                      "name": "Grundsatz , Internationales im Bereich Polizei und Justiz",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzAz",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Behn",
+                                                "position": "RD"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "node": {
+                              "shortName": "Abteilung 2",
+                              "name": "IFG, Technologischer Datenschutz, Telekommunikation",
+                              "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjY3",
+                              "locations": {
+                                "edges": []
+                              },
+                              "reverseClaims": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "claimType": {
+                                        "name": "headOf"
+                                      },
+                                      "entity": {
+                                        "name": "Jost",
+                                        "position": "MR‘n"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "claims": {
+                                "edges": []
+                              },
+                              "children": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 25",
+                                      "name": "IFG, Innere Verwaltung, Stasi-Unterlagen",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjY5",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": []
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 24",
+                                      "name": "Telekommunikation, Telemedien",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjgx",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Hartmann",
+                                                "position": "MR´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 23",
+                                      "name": "Technologischer Datenschutz, Datensicherheit",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjg5",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Dr. Bender",
+                                                "position": "RD"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 22",
+                                      "name": "Postdienste, Wirtschaftsverwaltung",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjk5",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Schäfer",
+                                                "position": "RD´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 21",
+                                      "name": "Projekte der angewandten Informatik, Telematik",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzA1",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Dr. Kremer",
+                                                "position": "MR"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "node": {
+                              "shortName": "Abteilung 1",
+                              "name": "Grundsatz/Internationales",
+                              "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjcw",
+                              "locations": {
+                                "edges": []
+                              },
+                              "reverseClaims": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "claimType": {
+                                        "name": "headOf"
+                                      },
+                                      "entity": {
+                                        "name": "Heyn",
+                                        "position": "MinDirg"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "claims": {
+                                "edges": []
+                              },
+                              "children": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 15",
+                                      "name": "Arbeitsverwaltung, Beschäftigtendatenschutz, Verteidigung",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjcy",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": []
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 14",
+                                      "name": "Europäische und Internationale Angelegenheiten",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjgz",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Dr. Haupt",
+                                                "position": "RD"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 13",
+                                      "name": "Sozial- und Gesundheitswesen",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjkx",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Raum",
+                                                "position": "MR"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 12",
+                                      "name": "Finanz-/Steuerverwaltung, Rechtswesen, Parlamentarischer Bereich",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjk3",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Lenzen",
+                                                "position": "MR"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat 11",
+                                      "name": "Grundsatz, nichtöffentlicher Bereich",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzA3",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Hermerschmidt",
+                                                "position": "MR"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "node": {
+                              "shortName": "Abteilung Z",
+                              "name": "Zentrale Aufgaben",
+                              "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjc1",
+                              "locations": {
+                                "edges": []
+                              },
+                              "reverseClaims": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "claimType": {
+                                        "name": "headOf"
+                                      },
+                                      "entity": {
+                                        "name": "Dr. Grundmann",
+                                        "position": "MR’n"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "claims": {
+                                "edges": []
+                              },
+                              "children": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "shortName": null,
+                                      "name": "Justitiariat",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjc3",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Peschel",
+                                                "position": "MR"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat IKT",
+                                      "name": "Informations- und Kommunikationstechnik",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjg1",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Dr. Garbotz",
+                                                "position": "MR"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat Z 3",
+                                      "name": "Innerer Dienst/Beschaffung",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMjkz",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Dr. Kreiling",
+                                                "position": "MR´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat Z 2",
+                                      "name": "Organisation/Haushalt",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzAx",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Bönner",
+                                                "position": "MR´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "shortName": "Referat Z 1",
+                                      "name": "Personal",
+                                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzA5",
+                                      "locations": {
+                                        "edges": []
+                                      },
+                                      "reverseClaims": {
+                                        "edges": [
+                                          {
+                                            "node": {
+                                              "claimType": {
+                                                "name": "headOf"
+                                              },
+                                              "entity": {
+                                                "name": "Dr. Grundmann",
+                                                "position": "MR´n"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "claims": {
+                                        "edges": []
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "node": {
+                              "shortName": null,
+                              "name": "Zentrale Anlaufstelle",
+                              "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzEx",
+                              "locations": {
+                                "edges": []
+                              },
+                              "reverseClaims": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "claimType": {
+                                        "name": "headOf"
+                                      },
+                                      "entity": {
+                                        "name": "Meister",
+                                        "position": "MR"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "claims": {
+                                "edges": []
+                              },
+                              "children": {
+                                "edges": []
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "shortName": null,
+                      "name": "Ansprechperson für Korruptionsprävention, Sponsoringbeauftragter",
+                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzE0",
+                      "locations": {
+                        "edges": []
+                      },
+                      "reverseClaims": {
+                        "edges": [
+                          {
+                            "node": {
+                              "claimType": {
+                                "name": "headOf"
+                              },
+                              "entity": {
+                                "name": "Roski",
+                                "position": "RD"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "claims": {
+                        "edges": []
+                      },
+                      "children": {
+                        "edges": []
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "shortName": null,
+                      "name": "IT-Sicherheitsbeauftragter",
+                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzE2",
+                      "locations": {
+                        "edges": []
+                      },
+                      "reverseClaims": {
+                        "edges": [
+                          {
+                            "node": {
+                              "claimType": {
+                                "name": "headOf"
+                              },
+                              "entity": {
+                                "name": "Höllen",
+                                "position": "OAR"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "claims": {
+                        "edges": []
+                      },
+                      "children": {
+                        "edges": []
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "shortName": null,
+                      "name": "Geheimschutzbeauftragter",
+                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzE4",
+                      "locations": {
+                        "edges": []
+                      },
+                      "reverseClaims": {
+                        "edges": [
+                          {
+                            "node": {
+                              "claimType": {
+                                "name": "headOf"
+                              },
+                              "entity": {
+                                "name": "Finzelberg",
+                                "position": "OAR"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "claims": {
+                        "edges": []
+                      },
+                      "children": {
+                        "edges": []
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "shortName": null,
+                      "name": "Behördlicher Datenschutzbeauftragter",
+                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzIw",
+                      "locations": {
+                        "edges": []
+                      },
+                      "reverseClaims": {
+                        "edges": [
+                          {
+                            "node": {
+                              "claimType": {
+                                "name": "headOf"
+                              },
+                              "entity": {
+                                "name": "Müller, T.",
+                                "position": "RD"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "claims": {
+                        "edges": []
+                      },
+                      "children": {
+                        "edges": []
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "shortName": null,
+                      "name": "Leitungsstab Presse/Öffentlichkeitsarbeit",
+                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzIy",
+                      "locations": {
+                        "edges": []
+                      },
+                      "reverseClaims": {
+                        "edges": [
+                          {
+                            "node": {
+                              "claimType": {
+                                "name": "headOf"
+                              },
+                              "entity": {
+                                "name": "Hensel",
+                                "position": "MR"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "claims": {
+                        "edges": []
+                      },
+                      "children": {
+                        "edges": []
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "shortName": null,
+                      "name": "Gleichstellungsbeauftragte",
+                      "id": "T3JnYW5pc2F0aW9uRW50aXR5Tm9kZToyMzEz",
+                      "locations": {
+                        "edges": []
+                      },
+                      "reverseClaims": {
+                        "edges": [
+                          {
+                            "node": {
+                              "claimType": {
+                                "name": "headOf"
+                              },
+                              "entity": {
+                                "name": "Kemper",
+                                "position": "OAR´n"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "claims": {
+                        "edges": []
+                      },
+                      "children": {
+                        "edges": []
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
