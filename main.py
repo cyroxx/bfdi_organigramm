@@ -19,6 +19,15 @@ def get_children(node):
         yield edge['node']
 
 
+def custom_sort_function(item):
+    node = item['node']
+
+    if node['shortName']:
+        return node['shortName'] + node['name']
+    else:
+        return node['name']
+
+
 def walk_children(node, node_function=None, level=0, graph=None):
 
     if not node.get('children') or not node['children']['edges']:
