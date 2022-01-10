@@ -35,11 +35,14 @@ def walk_children(node, node_function=None, level=0, graph=None):
 
     subgraph_name = f"subgraph_{node['id']}"  # f"{'subgraph' if level < 3 else 'cluster'}_{node['id']}"
     with graph.subgraph(name=subgraph_name) as g:
+
         prev_intermediate = None
-        for i, edge in enumerate(node['children']['edges']):
+        for i, edge in enumerate(sorted(node['children']['edges'], key=custom_sort_function)):
             print(i)
             child_node = edge['node']
-    
+
+            walk_children(child_node, node_function, level=level + 1, graph=g)
+
             if node_function:
                 node_function(child_node)
     
@@ -59,7 +62,7 @@ def walk_children(node, node_function=None, level=0, graph=None):
     
                 prev_intermediate = intermediate
     
-            walk_children(child_node, node_function, level=level+1, graph=g)
+
 
 
 def main():
@@ -106,6 +109,7 @@ def main():
 
     dot.format = 'png'
     dot.render(directory='output').replace('\\', '/')
+
 
 if __name__ == '__main__':
     main()
