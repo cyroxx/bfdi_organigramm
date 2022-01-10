@@ -19,21 +19,37 @@ def get_children(node):
         yield edge['node']
 
 
-def walk_children(node, node_function=None, edge_function=None, level=0):
+def walk_children(node, node_function=None, edge_function=None, level=0, graph=None):
 
     if not node.get('children'):
         return None
 
+    i = 0
+    prev_intermediate = None
     for edge in node['children']['edges']:
         child_node = edge['node']
 
         if node_function:
             node_function(child_node)
 
-        if edge_function:
-            edge_function(node, child_node, level)
+        if level < 3:
+            graph.edge(node['id'], child_node['id'])
+        else:
+            intermediate = f"{node['id'][-5:]}_{child_node['id'][-5:]}_intermediate"
+            graph.node(intermediate, **NODE_INTERMEDIATE_ATTR)
 
-        walk_children(child_node, node_function, edge_function, level=level+1)
+            if prev_intermediate:
+                graph.edge(prev_intermediate, intermediate)
+            else:
+                graph.edge(node['id'], intermediate)
+
+            with graph.subgraph(graph_attr={'rank': 'same'}) as c:
+                c.edge(intermediate, child_node['id'])
+
+            prev_intermediate = intermediate
+
+        walk_children(child_node, node_function, edge_function, level=level+1, graph=graph)
+        i+=1
 
 
 def main():
@@ -85,9 +101,9 @@ def main():
             with dot.subgraph(graph_attr={'rank': 'same'}) as c:
                 c.edge(intermediate, child['id'])
 
-    walk_children(root, custom_node_function, parent_child_function)
+    walk_children(root, custom_node_function, parent_child_function, graph=dot)
 
-    #print(dot.source)
+    print(dot.source)
 
     dot.format = 'png'
     dot.render(directory='output').replace('\\', '/')
