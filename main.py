@@ -82,10 +82,11 @@ def main():
         else:
             head_of_label = 'NN'
 
+        name_lines = ',<BR/>'.join(node['name'].split(', '))
         if node['shortName']:
-            node_text = f"<<B>{node['shortName']}</B><BR/>{node['name']}<BR/>{head_of_label}>"
+            node_text = f"<<B>{node['shortName']}</B><BR/>{name_lines}<BR/><BR/>{head_of_label}>"
         else:
-            node_text = f"<<B>{node['name']}</B><BR/>{head_of_label}>"
+            node_text = f"<<B>{name_lines}</B><BR/><BR/>{head_of_label}>"
 
         dot.node(node['id'], node_text)
 
